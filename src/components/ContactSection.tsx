@@ -1,6 +1,8 @@
+
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Mail, MapPin, Clock, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -29,31 +31,35 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-5 w-5 text-primary" />,
       title: "Telefone",
-      details: "(67) 3345-6789",
-      link: "tel:+556733456789"
+      details: "(47) 99999-112",
+      link: "tel:+554799999112"
     },
     {
       icon: <Mail className="h-5 w-5 text-primary" />,
       title: "E-mail",
-      details: "vendas@agrotechimplementos.com.br",
-      link: "mailto:vendas@agrotechimplementos.com.br"
+      details: "contabilidaderebelo@hotmail.com",
+      link: "mailto:contabilidaderebelo@hotmail.com"
     },
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
       title: "Endereço",
-      details: "Rod. BR-163, Km 85, Campo Grande - MS",
-      link: "https://maps.google.com"
+      details: "Travessa Mauricio Furtado, 30",
+      link: "https://maps.google.com/?q=Travessa+Mauricio+Furtado,+30"
     },
     {
       icon: <Clock className="h-5 w-5 text-primary" />,
       title: "Horário",
-      details: "Segunda a Sexta, 7h às 17h | Sábado, 8h às 12h",
+      details: "Segunda a Sexta, 8h às 18h",
       link: null
     }
   ];
 
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/554799999112?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis.', '_blank');
+  };
+
   return (
-    <section id="contact" ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
+    <section id="contato" ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
@@ -64,11 +70,11 @@ const ContactSection = () => {
             Entre em Contato
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
-            Estamos Prontos para Atender Você
+            Fale Conosco
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto animate-on-scroll">
-            Entre em contato conosco para orçamentos, assistência técnica ou informações sobre nossos implementos agrícolas.
-            Nossa equipe especializada está à disposição para ajudar no crescimento da sua propriedade rural.
+            Entre em contato conosco para orçamentos, consultoria ou esclarecimentos sobre nossos serviços contábeis.
+            Estamos prontos para ajudar sua empresa a crescer.
           </p>
         </div>
 
@@ -79,8 +85,8 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
                   <p className="text-muted-foreground mb-8">
-                    Para solicitar orçamentos de implementos, agendar assistência técnica ou conhecer nossos produtos,
-                    utilize um dos canais de atendimento abaixo. Atendemos produtores rurais de todo o Centro-Oeste.
+                    Para solicitar orçamentos, agendar consultorias ou esclarecer dúvidas sobre 
+                    serviços contábeis, fiscais e assessoria financeira, utilize um dos canais abaixo.
                   </p>
                   
                   <div className="space-y-6 mb-8">
@@ -95,30 +101,34 @@ const ContactSection = () => {
                     ))}
                   </div>
                   
-                  <div>
-                    <h4 className="text-lg font-medium mb-4">Siga-nos</h4>
-                    <div className="flex space-x-3">
-                      <SocialLink icon={<Facebook size={20} />} href="#" label="Facebook" />
-                      <SocialLink icon={<Instagram size={20} />} href="#" label="Instagram" />
-                      <SocialLink icon={<Linkedin size={20} />} href="#" label="LinkedIn" />
-                    </div>
+                  <div className="bg-primary/5 rounded-xl p-6">
+                    <h4 className="font-bold text-lg mb-3">Experiência que Faz a Diferença</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Mais de 30 anos de experiência em contabilidade, ajudando empresários 
+                      nas melhores escolhas tributárias e tomadas de decisões estratégicas.
+                    </p>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-center">
-                  <div className="text-center p-6 bg-primary/5 rounded-xl max-w-md">
-                    <div className="mb-4 text-primary">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto">
-                        <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
-                        <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
-                      </svg>
+                  <div className="text-center p-6 bg-accent/5 rounded-xl max-w-md">
+                    <div className="mb-4 text-accent">
+                      <MessageCircle className="h-12 w-12 mx-auto" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">Prefere atendimento via WhatsApp?</h3>
+                    <h3 className="text-xl font-bold mb-3">Atendimento via WhatsApp</h3>
                     <p className="text-muted-foreground mb-6">
-                      Clique no botão do WhatsApp no canto inferior direito da tela para falar diretamente com nossos especialistas em implementos agrícolas e receber atendimento personalizado.
+                      Clique no botão do WhatsApp para falar diretamente com nossos especialistas 
+                      em contabilidade e receber atendimento personalizado.
                     </p>
-                    <div className="text-sm text-muted-foreground">
-                      Tempo médio de resposta: <span className="font-medium text-foreground">15 minutos</span>
+                    <Button 
+                      onClick={handleWhatsAppClick}
+                      className="w-full bg-[#25D366] hover:bg-[#20BD5C] text-white"
+                    >
+                      <MessageCircle className="h-4 w-4 mr-2" />
+                      Falar no WhatsApp
+                    </Button>
+                    <div className="text-sm text-muted-foreground mt-4">
+                      Tempo médio de resposta: <span className="font-medium text-foreground">30 minutos</span>
                     </div>
                   </div>
                 </div>
@@ -127,19 +137,33 @@ const ContactSection = () => {
           </Card>
         </div>
 
-        <div className="mt-16 animate-on-scroll">
-          <Card className="border border-border/50 shadow-card overflow-hidden">
-            <div className="h-[400px] w-full">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.123456789!2d-54.6164919!3d-20.4629581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e1b123456789%3A0x123456789abcdef!2sBR-163%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1627909542948!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                title="Mapa de localização - AgroTech Implementos"
-              ></iframe>
-            </div>
+        <div className="mt-16 text-center animate-on-scroll">
+          <Card className="border border-border/50 shadow-card">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-4">Pronto para Começar?</h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                A Contabilidade Rebelo está pronta para ajudar sua empresa a alcançar seus objetivos. 
+                Entre em contato conosco hoje mesmo e descubra como podemos fazer a diferença no seu negócio.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  onClick={handleWhatsAppClick}
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                >
+                  <Phone className="h-5 w-5 mr-2" />
+                  Solicitar Orçamento
+                </Button>
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  onClick={() => window.open('mailto:contabilidaderebelo@hotmail.com', '_blank')}
+                >
+                  <Mail className="h-5 w-5 mr-2" />
+                  Enviar E-mail
+                </Button>
+              </div>
+            </CardContent>
           </Card>
         </div>
       </div>
@@ -167,7 +191,7 @@ const ContactInfoItem = ({ icon, title, details, link }: ContactInfoItemProps) =
 
   if (link) {
     return (
-      <a href={link} className="block hover:text-primary transition-colors">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="block hover:text-primary transition-colors">
         {content}
       </a>
     );
@@ -175,21 +199,5 @@ const ContactInfoItem = ({ icon, title, details, link }: ContactInfoItemProps) =
 
   return content;
 };
-
-interface SocialLinkProps {
-  icon: React.ReactNode;
-  href: string;
-  label: string;
-}
-
-const SocialLink = ({ icon, href, label }: SocialLinkProps) => (
-  <a
-    href={href}
-    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors"
-    aria-label={label}
-  >
-    {icon}
-  </a>
-);
 
 export default ContactSection;

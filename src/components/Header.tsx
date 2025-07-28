@@ -30,7 +30,7 @@ const Header = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5567987654321?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20implementos%20agrícolas.', '_blank');
+    window.open('https://wa.me/554799999112?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis.', '_blank');
   };
 
   return (
@@ -43,9 +43,14 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          <a href="#" className="relative z-20">
+          <a href="#" className="relative z-20 flex items-center">
+            <img 
+              src="/lovable-uploads/a8a1d887-958d-4406-a72a-80a2ee56269c.png" 
+              alt="Contabilidade Rebelo - Logo" 
+              className="h-10 w-auto mr-3"
+            />
             <h1 className="text-xl md:text-2xl font-display font-bold text-foreground">
-              <span className="text-primary">AgroTech</span> Implementos
+              <span className="text-primary">Contabilidade</span> Rebelo
             </h1>
           </a>
 
@@ -60,7 +65,7 @@ const Header = () => {
               onClick={handleWhatsAppClick}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              Solicitar Orçamento
+              Fale Conosco
             </Button>
           </div>
 
@@ -81,7 +86,7 @@ const Header = () => {
                       onClick={handleWhatsAppClick}
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground mt-4"
                     >
-                      Solicitar Orçamento
+                      Fale Conosco
                     </Button>
                   </SheetClose>
                 </nav>
@@ -101,11 +106,11 @@ interface NavLinksProps {
 
 const NavLinks = ({ mobile, onClick }: NavLinksProps) => {
   const links = [
-    { name: 'Início', href: '#hero' },
-    { name: 'Produtos', href: '#products' },
-    { name: 'Marcas', href: '#brands' },
-    { name: 'Sobre Nós', href: '#about' },
-    { name: 'Contato', href: '#contact' },
+    { name: 'Início', href: '#inicio' },
+    { name: 'Sobre', href: '#sobre' },
+    { name: 'Serviços', href: '#servicos' },
+    { name: 'Localização', href: '#localizacao' },
+    { name: 'Contato', href: '#contato' },
   ];
 
   return (

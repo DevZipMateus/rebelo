@@ -1,0 +1,12 @@
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+
+Sitemap: https://contabilidaderebelo.com.br/sitemap.xml
