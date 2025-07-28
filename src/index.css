@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,37 +6,57 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 40% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    
-    --secondary: 210 40% 98%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    
-    --primary: 198 100% 30%;
-    --primary-foreground: 210 40% 98%;
-    --accent: 45 96% 53%;
-    --accent-foreground: 26 83% 14%;
-    
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 198 100% 30%;
+    --popover-foreground: 210 40% 15%;
+    --primary: 210 80% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 210 40% 15%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 210 40% 45%;
+    --accent: 45 95% 55%;
+    --accent-foreground: 210 40% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 80% 30%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+  }
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 222 91.2% 59.8%;
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 210 40% 15%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 45 95% 55%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 210 80% 50%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -46,109 +64,18 @@
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground font-sans;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight;
-  }
-
-  .section-padding {
-    @apply py-12 md:py-16 lg:py-20;
-  }
-
-  .container {
-    @apply px-4 md:px-6 lg:px-8;
+    @apply bg-background text-foreground;
   }
 }
 
-/* Custom animations */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Glass effect */
-.glass-effect {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.8);
-}
-
-/* Smooth scroll behavior */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* WhatsApp Button Animation */
-.whatsapp-btn {
-  animation: pulse 2s infinite;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.5);
-  will-change: transform, box-shadow;
-}
-
-.whatsapp-btn:hover {
-  transform: scale(1.1) rotate(8deg);
-  animation: none;
-  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.7);
-}
-
-.whatsapp-ripple {
-  animation: ripple 1.5s ease-out infinite;
-  border-radius: 50%;
-  transform: scale(0);
-  transform-origin: center;
-  pointer-events: none;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-    transform: scale(1);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-    transform: scale(1.05);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-    transform: scale(1);
-  }
-}
-
-@keyframes jump {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out forwards;
-}
-
-@keyframes slideUp {
+/* Custom animations */
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -159,133 +86,39 @@ html {
   }
 }
 
-/* Contabilidade Theme Enhancements */
-.hero-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(2, 132, 199, 0.8) 0%,
-    rgba(3, 105, 161, 0.9) 50%,
-    rgba(12, 74, 110, 0.95) 100%
-  );
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Enhanced Card Animations */
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary)) 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent)) 100%);
+}
+
+/* Hero section styling */
+.hero-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.9) 100%);
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all duration-300;
+}
+
+/* Service cards */
 .service-card {
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform-origin: center;
+  @apply bg-card border border-border rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300;
 }
 
-.service-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-/* Professional Color Gradients */
-.contabil-gradient {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%);
-}
-
-.accent-gradient {
-  background: linear-gradient(135deg, #eab308 0%, #ca8a04 50%, #a16207 100%);
-}
-
-/* Enhanced Button Styles */
-.cta-button {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #0284c7, #0369a1);
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(2, 132, 199, 0.3);
-}
-
-.cta-button:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
-}
-
-.cta-button:hover:before {
-  left: 100%;
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  .section-padding {
-    @apply py-8;
-  }
-  
-  h1 {
-    @apply text-2xl;
-  }
-  
-  h2 {
-    @apply text-xl;
-  }
-  
-  .hero-content {
-    text-align: center;
-  }
-  
-  .mobile-nav-link {
-    @apply w-full text-center py-3 px-5;
-  }
-}
-
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-  .animate-on-scroll,
-  .service-card {
-    transition: none;
-    animation: none;
-  }
-}
-
-/* Focus indicators for better accessibility */
-.focus-visible {
-  outline: 2px solid rgb(2, 132, 199);
-  outline-offset: 2px;
-}
-
-/* Custom scrollbar for webkit browsers */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(243, 244, 246);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(2, 132, 199);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(3, 105, 161);
-}
-
-/* Enhanced Shadow Utilities */
-.shadow-contabil {
-  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.1);
-}
-
-.shadow-accent {
-  box-shadow: 0 10px 30px rgba(234, 179, 8, 0.1);
-}
-
-.shadow-nav {
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-}
-
-.shadow-card {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+/* Footer styling */
+.footer-bg {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.95) 100%);
 }

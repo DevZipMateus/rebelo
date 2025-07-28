@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-secondary-foreground text-white py-16">
+    <footer className="footer-bg text-white py-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -19,10 +19,10 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/a8a1d887-958d-4406-a72a-80a2ee56269c.png" 
                 alt="Contabilidade Rebelo" 
-                className="h-8 w-auto mr-3"
+                className="h-12 w-auto mr-4"
               />
               <h3 className="text-xl font-bold">
-                <span className="text-primary">Contabilidade</span> Rebelo
+                <span className="text-secondary">Contabilidade</span> Rebelo
               </h3>
             </div>
             <p className="text-white/80 max-w-xs">
@@ -76,7 +76,7 @@ const Footer = () => {
               onClick={scrollToTop}
               variant="outline"
               size="icon"
-              className="rounded-full bg-primary/80 border-primary/20 hover:bg-primary/90 text-white"
+              className="rounded-full bg-secondary/80 border-secondary/20 hover:bg-secondary/90 text-primary-foreground"
             >
               <ChevronUp className="h-5 w-5" />
             </Button>

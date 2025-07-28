@@ -47,7 +47,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/a8a1d887-958d-4406-a72a-80a2ee56269c.png" 
               alt="Contabilidade Rebelo - Logo" 
-              className="h-10 w-auto mr-3"
+              className="h-16 w-auto mr-4 md:h-20"
             />
             <h1 className="text-xl md:text-2xl font-display font-bold text-foreground">
               <span className="text-primary">Contabilidade</span> Rebelo
@@ -63,7 +63,7 @@ const Header = () => {
           <div className="hidden md:flex items-center">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
             >
               Fale Conosco
             </Button>
@@ -84,7 +84,7 @@ const Header = () => {
                   <SheetClose asChild>
                     <Button 
                       onClick={handleWhatsAppClick}
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground mt-4"
+                      className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground mt-4"
                     >
                       Fale Conosco
                     </Button>
