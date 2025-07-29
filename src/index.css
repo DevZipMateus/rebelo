@@ -65,13 +65,19 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
 }
 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Seção padding responsivo */
+.section-padding {
+  @apply py-12 px-4 sm:py-16 sm:px-6 lg:py-20 lg:px-8;
 }
 
 /* Custom animations */
@@ -115,10 +121,15 @@ html {
 
 /* Service cards */
 .service-card {
-  @apply bg-card border border-border rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300;
+  @apply bg-card border border-border rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300;
 }
 
 /* Footer styling */
 .footer-bg {
   background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.95) 100%);
+}
+
+/* Responsive containers */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
