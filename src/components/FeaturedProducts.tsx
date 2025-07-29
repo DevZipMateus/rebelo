@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -39,7 +38,7 @@ const FeaturedProducts = () => {
       message = `Olá! Gostaria de ver todos os produtos disponíveis.`;
     }
     
-    const whatsappUrl = `https://wa.me/5567999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5547999911209?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
