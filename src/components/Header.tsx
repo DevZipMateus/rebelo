@@ -49,7 +49,7 @@ const Header = () => {
               className="h-16 w-auto mr-4 md:h-20"
             />
             <h1 className="text-xl md:text-2xl font-display font-bold text-foreground">
-              <span className="text-primary">Contabilidade</span> Rebelo
+              <span className="text-primary">Contabilidade</span> <span className="text-secondary">Rebelo</span>
             </h1>
           </a>
 
