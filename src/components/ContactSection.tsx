@@ -80,8 +80,8 @@ const ContactSection = () => {
 
         <div className="max-w-6xl mx-auto">
           <Card className="border border-border/50 shadow-card animate-on-scroll">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-10">
+            <CardContent className="p-4 sm:p-8">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-10">
                 <div>
                   <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
                   <p className="text-muted-foreground mb-8">
@@ -111,12 +111,12 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-center justify-center">
-                  <div className="text-center p-6 bg-accent/5 rounded-xl max-w-md">
-                    <div className="mb-4 text-accent">
-                      <MessageCircle className="h-12 w-12 mx-auto" />
+                  <div className="text-center p-4 sm:p-6 bg-accent/5 rounded-xl w-full max-w-sm mx-auto">
+                    <div className="mb-4 text-accent flex justify-center">
+                      <MessageCircle className="h-12 w-12" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">Atendimento via WhatsApp</h3>
-                    <p className="text-muted-foreground mb-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-3">Atendimento via WhatsApp</h3>
+                    <p className="text-muted-foreground mb-6 text-sm sm:text-base">
                       Clique no botão do WhatsApp para falar diretamente com nossos especialistas 
                       em contabilidade e receber atendimento personalizado.
                     </p>
