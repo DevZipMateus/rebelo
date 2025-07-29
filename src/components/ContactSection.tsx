@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
@@ -31,8 +30,8 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-5 w-5 text-primary" />,
       title: "Telefone",
-      details: "(47) 99999-112",
-      link: "tel:+554799999112"
+      details: "(47) 99991-1209",
+      link: "tel:+5547999911209"
     },
     {
       icon: <Mail className="h-5 w-5 text-primary" />,
@@ -55,7 +54,7 @@ const ContactSection = () => {
   ];
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/554799999112?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis.', '_blank');
+    window.open('https://wa.me/5547999911209?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis.', '_blank');
   };
 
   return (
