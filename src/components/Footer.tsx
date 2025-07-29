@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ChevronUp } from 'lucide-react';
 
@@ -68,9 +67,14 @@ const Footer = () => {
         <hr className="border-white/20 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/70 text-sm">
-            © {new Date().getFullYear()} Contabilidade Rebelo. Todos os direitos reservados.
-          </p>
+          <div className="text-white/70 text-sm text-center md:text-left">
+            <p className="mb-1">
+              © {new Date().getFullYear()} Contabilidade Rebelo. Todos os direitos reservados.
+            </p>
+            <p className="text-xs">
+              Desenvolvido por <span className="text-secondary font-medium">MonteSite</span>
+            </p>
+          </div>
           <div className="mt-4 md:mt-0">
             <Button
               onClick={scrollToTop}
