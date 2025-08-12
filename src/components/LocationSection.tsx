@@ -87,7 +87,10 @@ const LocationSection = () => {
                 ))}
               </div>
               
-              <div className="mt-8 p-4 sm:p-6 bg-primary/5 rounded-xl">
+            </div>
+            
+            <div className="animate-on-scroll">
+              <div className="p-4 sm:p-6 bg-primary/5 rounded-xl h-full">
                 <h4 className="font-bold text-sm sm:text-base mb-3">Horário de Atendimento</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex justify-between">
