@@ -52,14 +52,13 @@ const ContactSection = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-on-scroll">
-            Entre em Contato
+            Atendimento no Local do Cliente
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll px-2">
             Fale Conosco
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto animate-on-scroll text-sm sm:text-base px-4">
-            Entre em contato conosco para orçamentos, consultoria ou esclarecimentos sobre nossos serviços contábeis.
-            Estamos prontos para ajudar sua empresa a crescer.
+            Vamos até você para melhor atendê-lo. Entre em contato conosco para orçamentos, consultoria ou esclarecimentos sobre nossos serviços contábeis.
           </p>
         </div>
 
@@ -104,6 +103,40 @@ const ContactSection = () => {
                     
                   </div>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="text-center animate-on-scroll">
+          <Card className="border border-border/50 shadow-card">
+            <CardContent className="p-4 sm:p-6">
+              <div className="mb-4 text-primary">
+                <MapPin className="h-8 w-8 sm:h-10 sm:w-10 mx-auto" />
+              </div>
+              <h3 className="text-base sm:text-lg font-bold mb-4">Vamos até Você</h3>
+              <p className="text-muted-foreground mb-6 text-sm sm:text-base max-w-2xl mx-auto">
+                Nosso diferencial é ir até o cliente para melhor atendê-lo. Atendemos em toda a região.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto">
+                <a
+                  href="https://wa.me/5547999911209?text=Olá!%20Gostaria%20de%20solicitar%20um%20atendimento%20no%20meu%20endereço."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-4 py-2.5 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm w-full sm:w-auto"
+                >
+                  <MapPin className="h-4 w-4 mr-2" />
+                  Solicitar Atendimento
+                </a>
+                <a
+                  href="https://wa.me/5547999911209?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20escritório."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-4 py-2.5 bg-accent text-accent-foreground rounded-md hover:bg-accent/90 transition-colors text-sm w-full sm:w-auto"
+                >
+                  <Phone className="h-4 w-4 mr-2" />
+                  Agendar Visita
+                </a>
               </div>
             </CardContent>
           </Card>
