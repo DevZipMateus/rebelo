@@ -75,7 +75,7 @@ const LocationSection = () => {
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 mb-8 sm:mb-12">
             <div className="animate-on-scroll">
               <h3 className="text-lg sm:text-xl font-bold mb-6">Informações de Contato</h3>
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {contactInfo.map((item, index) => (
                   <ContactInfoItem 
                     key={index}
