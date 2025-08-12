@@ -41,9 +41,9 @@ const ContactSection = () => {
     },
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
-      title: "Endereço",
-      details: "Travessa Mauricio Furtado, 30",
-      link: "https://maps.google.com/?q=Travessa+Mauricio+Furtado,+30"
+      title: "Atendimento no Local do Cliente",
+      details: "Nosso diferencial é ir até você para melhor atendê-lo.",
+      link: null
     },
     {
       icon: <Clock className="h-5 w-5 text-primary" />,
@@ -103,7 +103,7 @@ const ContactSection = () => {
                   <div className="bg-primary/5 rounded-xl p-4 sm:p-6">
                     <h4 className="font-bold text-base sm:text-lg mb-3">Experiência que Faz a Diferença</h4>
                     <p className="text-muted-foreground text-sm">
-                      Mais de 30 anos de experiência em contabilidade, ajudando empresários 
+                      Mais de 25 anos de experiência em contabilidade, ajudando empresários 
                       nas melhores escolhas tributárias e tomadas de decisões estratégicas.
                     </p>
                   </div>

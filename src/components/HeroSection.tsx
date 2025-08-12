@@ -32,7 +32,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-left">
               <span className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-md rounded-full text-white font-medium mb-6 animate-slide-up [animation-delay:300ms]">
-                Mais de 30 anos de experiência
+                Mais de 25 anos de experiência
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-slide-up [animation-delay:500ms]">

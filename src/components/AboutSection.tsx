@@ -33,7 +33,7 @@ const AboutSection = () => {
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
-      title: "30+ Anos de Experiência",
+      title: "25+ Anos de Experiência",
       description: "Profissional experiente e qualificado"
     },
     {
@@ -74,7 +74,7 @@ const AboutSection = () => {
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   A Contabilidade Rebelo está em atividade desde 24 de junho de 2010, 
-                  com um profissional que possui mais de 30 anos de experiência no 
+                  com um profissional que possui mais de 25 anos de experiência no 
                   mercado contábil.
                 </p>
                 <p>

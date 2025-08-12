@@ -25,7 +25,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-white/80 max-w-xs">
-              Mais de 30 anos de experiência em serviços contábeis, fiscais e assessoria financeira.
+              Mais de 25 anos de experiência em serviços contábeis, fiscais e assessoria financeira.
             </p>
             <div className="text-sm text-white/70">
               <p>Desde 2010 trabalhando pelo seu sucesso</p>
@@ -58,7 +58,7 @@ const Footer = () => {
             <ul className="space-y-3 text-white/80">
               <li>(47) 99999-112</li>
               <li>contabilidaderebelo@hotmail.com</li>
-              <li>Travessa Mauricio Furtado, 30</li>
+              <li>Atendimento no local do cliente (vamos até você)</li>
               <li>Segunda a Sexta, 8h às 18h</li>
             </ul>
           </div>

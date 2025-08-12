@@ -28,9 +28,9 @@ const LocationSection = () => {
   const contactInfo = [
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
-      title: "Endereço",
-      details: "Travessa Mauricio Furtado, 30",
-      link: "https://maps.google.com/?q=Travessa+Mauricio+Furtado,+30"
+      title: "Atendimento no Local do Cliente",
+      details: "Vamos até você para melhor atendê-lo.",
+      link: null
     },
     {
       icon: <Phone className="h-5 w-5 text-primary" />,
@@ -64,10 +64,10 @@ const LocationSection = () => {
             Localização
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
-            Encontre a Contabilidade Rebelo
+            Atendimento no Local do Cliente
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto animate-on-scroll text-sm sm:text-base">
-            Visite nosso escritório ou entre em contato conosco através dos canais disponíveis.
+            Nosso diferencial é ir até você para melhor atendê-lo. Agende uma visita ou fale conosco.
           </p>
         </div>
 
@@ -130,20 +130,19 @@ const LocationSection = () => {
                 <div className="mb-4 text-primary">
                   <MapPin className="h-8 w-8 sm:h-10 sm:w-10 mx-auto" />
                 </div>
-                <h3 className="text-base sm:text-lg font-bold mb-4">Visite Nosso Escritório</h3>
+                <h3 className="text-base sm:text-lg font-bold mb-4">Vamos até Você</h3>
                 <p className="text-muted-foreground mb-6 text-sm sm:text-base max-w-2xl mx-auto">
-                  Estamos localizados na Travessa Mauricio Furtado, 30. 
-                  Agende uma visita ou entre em contato conosco para mais informações.
+                  Nosso diferencial é ir até o cliente para melhor atendê-lo. Atendemos em toda a região.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto">
                   <a
-                    href="https://maps.google.com/?q=Travessa+Mauricio+Furtado,+30"
+                    href="https://wa.me/5547999911209?text=Olá!%20Gostaria%20de%20solicitar%20um%20atendimento%20no%20meu%20endereço."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-4 py-2.5 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm w-full sm:w-auto"
                   >
                     <MapPin className="h-4 w-4 mr-2" />
-                    Ver no Google Maps
+                    Solicitar Atendimento
                   </a>
                   <a
                     href="https://wa.me/5547999911209?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20escritório."
