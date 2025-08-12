@@ -141,7 +141,7 @@ const ServicesSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4">Por que escolher a Contabilidade Rebelo?</h3>
               <p className="text-muted-foreground">
-                Mais de 25 anos de experiência trabalhando para o sucesso do seu negócio
+                Mais de 30 anos de experiência trabalhando para o sucesso do seu negócio
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">

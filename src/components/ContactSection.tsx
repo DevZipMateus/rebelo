@@ -103,7 +103,7 @@ const ContactSection = () => {
                   <div className="bg-primary/5 rounded-xl p-4 sm:p-6">
                     <h4 className="font-bold text-base sm:text-lg mb-3">Experiência que Faz a Diferença</h4>
                     <p className="text-muted-foreground text-sm">
-                      Mais de 25 anos de experiência em contabilidade, ajudando empresários 
+                      Mais de 30 anos de experiência em contabilidade, ajudando empresários 
                       nas melhores escolhas tributárias e tomadas de decisões estratégicas.
                     </p>
                   </div>

@@ -25,7 +25,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-white/80 max-w-xs">
-              Mais de 25 anos de experiência em serviços contábeis, fiscais e assessoria financeira.
+              Mais de 30 anos de experiência em serviços contábeis, fiscais e assessoria financeira.
             </p>
             <div className="text-sm text-white/70">
               <p>Desde 2010 trabalhando pelo seu sucesso</p>
