@@ -61,7 +61,7 @@ const LocationSection = () => {
       <div className="container mx-auto relative z-10 px-4">
         <div className="text-center mb-8 sm:mb-12">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-on-scroll">
-            Localização
+            Atendimento no Local do Cliente
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
             Atendimento no Local do Cliente
@@ -106,22 +106,6 @@ const LocationSection = () => {
               </div>
             </div>
             
-            <div className="animate-on-scroll">
-              <Card className="border border-border/50 shadow-card overflow-hidden">
-                <div className="h-[250px] sm:h-[300px] lg:h-[350px] w-full">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.234567890!2d-48.8765432!3d-26.9123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU0JzQ0LjQiUyA0OMKwNTInMzUuNSJX!5e0!3m2!1spt-BR!2sbr!4v1640000000000!5m2!1spt-BR!2sbr"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Mapa de localização - Contabilidade Rebelo"
-                  ></iframe>
-                </div>
-              </Card>
-            </div>
           </div>
 
           <div className="text-center animate-on-scroll">
